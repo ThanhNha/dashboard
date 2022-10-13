@@ -46,11 +46,11 @@
 
                 <button class="menu-btn focus:outline-none focus:shadow-outline flex flex-wrap items-center">
                     <div class="w-8 h-8 overflow-hidden rounded-full">
-                        <img class="w-full h-full object-cover" src="img/user.svg">
+                        <img class="w-full h-full object-cover" src="img/user.svg" alt="">
                     </div>
 
                     <div class="ml-2 capitalize flex ">
-                        <h1 class="text-sm text-gray-800 font-semibold m-0 p-0 leading-none">{{ Auth::user()->name }}</h1>
+                        <h1 class="text-sm text-gray-800 font-semibold m-0 p-0 leading-none">{{ Auth::user()->getFullNameAttribute() }}</h1>
                         <i class="fad fa-chevron-down ml-2 text-xs leading-none"></i>
                     </div>
                 </button>

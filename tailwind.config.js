@@ -4,11 +4,27 @@ module.exports = {
     content: [
         './resources/views/**/*.blade.php',
         './resources/views/**/**/*.blade.php',
-         './resources/assets/js/components/**/*.vue',
-         './resources/assets/js/**/*.vue',
+        './resources/assets/js/components/**/*.vue',
+        './resources/assets/js/**/*.vue',
     ],
     theme: {
-        // extend: {},
+        animatedSettings: {
+            animatedSpeed: 1000,
+            heartBeatSpeed: 1000,
+            hingeSpeed: 2000,
+            bounceInSpeed: 750,
+            bounceOutSpeed: 750,
+            animationDelaySpeed: 1000
+        },
+        variants: ['responsive'],
+
+        extend: {
+            spacing: {
+                '72': '18rem',
+                '84': '21rem',
+                '96': '24rem',
+            },
+        },
         screens: {
             'sm': {'max': '639px'},
 
@@ -19,5 +35,8 @@ module.exports = {
             'xl': {'max': '1279px'},
         },
     },
-    plugins: [],
+    variants: {},
+    plugins: [
+        require('tailwindcss-animatecss'),
+    ],
 }
