@@ -15,7 +15,6 @@
 <body>
 
 @stack('body_stack')
-<x-notify-messages />
 <x-layouts.auth.content>
 
     {!! $content !!}

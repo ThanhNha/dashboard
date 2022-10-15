@@ -11,11 +11,7 @@ export default defineConfig({
                 'resources/assets/css/app.css',
                 'resources/assets/js/app.js',
                 //Auth login
-                'resources/assets/css/auth/login.css',
-                'resources/assets/js/auth/login.js',
 
-                //Test page
-                'resources/assets/js/test/script.js',
             ],
             refresh: true,
         }),

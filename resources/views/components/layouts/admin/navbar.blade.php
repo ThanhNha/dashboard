@@ -1,349 +1,214 @@
 @stack('navbar_start')
 
 <!-- start navbar -->
-<div
-    class="md:fixed md:w-full md:top-0 md:z-20 flex flex-row flex-wrap items-center bg-white p-6 border-b border-gray-300">
+<nav class="navbar p-0 fixed-top d-flex flex-row">
+    <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
+                                                                       alt="logo"/></a>
+    </div>
+    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+        </button>
+        <ul class="navbar-nav w-100">
+            <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                    <input type="text" class="form-control" placeholder="Search products">
+                </form>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown"
+                   data-bs-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                     aria-labelledby="createbuttonDropdown">
+                    <h6 class="p-3 mb-0">Projects</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-file-outline text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">Software Development</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-web text-info"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">UI Development</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-layers text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+            </li>
+            <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                    <i class="mdi mdi-view-grid"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="mdi mdi-email"></i>
+                    <span class="count bg-success"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                     aria-labelledby="messageDropdown">
+                    <h6 class="p-3 mb-0">Messages</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                            <p class="text-muted mb-0"> 1 Minutes ago </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                            <p class="text-muted mb-0"> 15 Minutes ago </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                            <p class="text-muted mb-0"> 18 Minutes ago </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">4 new messages</p>
+                </div>
+            </li>
+            <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                   data-bs-toggle="dropdown">
+                    <i class="mdi mdi-bell"></i>
+                    <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                     aria-labelledby="notificationDropdown">
+                    <h6 class="p-3 mb-0">Notifications</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-calendar text-success"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1">Event today</p>
+                            <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-settings text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1">Settings</p>
+                            <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-link-variant text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1">Launch Admin</p>
+                            <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
+                    <div class="navbar-profile">
+                        <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
+                        <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                        <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                     aria-labelledby="profileDropdown">
+                    <h6 class="p-3 mb-0">Profile</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-settings text-success"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1">Settings</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-logout text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                Log out
+                            </p>
 
-    <!-- logo -->
-    <div class="flex-none w-56 flex flex-row items-center">
-        <img src="img/logo.png" class="w-10 flex-none">
-        <strong class="capitalize ml-1 flex-1">Shin</strong>
-
-        <button id="sliderBtn" class="flex-none text-right text-gray-900 hidden md:block">
-            <i class="fad fa-list-ul"></i>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+            </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                data-toggle="offcanvas">
+            <span class="mdi mdi-format-line-spacing"></span>
         </button>
     </div>
-    <!-- end logo -->
-
-    <!-- navbar content toggle -->
-    <button id="navbarToggle" class="hidden md:block md:fixed right-0 mr-6">
-        <i class="fad fa-chevron-double-down"></i>
-    </button>
-    <!-- end navbar content toggle -->
-
-    <!-- navbar content -->
-    <div id="navbar"
-        class="animated md:hidden md:fixed md:top-0 md:w-full md:left-0 md:mt-16 md:border-t md:border-b md:border-gray-200 md:p-10 md:bg-white flex-1 pl-3 flex flex-row flex-wrap justify-between items-center md:flex-col md:items-center">
-        <!-- left -->
-        <div
-            class="text-gray-600 md:w-full md:flex md:flex-row md:justify-evenly md:pb-10 md:mb-10 md:border-b md:border-gray-200">
-            <a class="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i
-                    class="fad fa-envelope-open-text"></i></a>
-            <a class="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i
-                    class="fad fa-comments-alt"></i></a>
-            <a class="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i
-                    class="fad fa-check-circle"></i></a>
-            <a class="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i
-                    class="fad fa-calendar-exclamation"></i></a>
-        </div>
-        <!-- end left -->
-
-        <!-- right -->
-        <div class="flex flex-row-reverse items-center">
-
-            <!-- user -->
-            <div class="dropdown relative md:static">
-
-                <button class="menu-btn focus:outline-none focus:shadow-outline flex flex-wrap items-center">
-                    <div class="w-8 h-8 overflow-hidden rounded-full">
-                        <img class="w-full h-full object-cover" src="img/user.svg" alt="">
-                    </div>
-
-                    <div class="ml-2 capitalize flex ">
-                        <h1 class="text-sm text-gray-800 font-semibold m-0 p-0 leading-none">{{ Auth::user()->getFullNameAttribute() }}</h1>
-                        <i class="fad fa-chevron-down ml-2 text-xs leading-none"></i>
-                    </div>
-                </button>
-
-                <button class="hidden fixed top-0 left-0 z-10 w-full h-full menu-overflow"></button>
-
-                <div
-                    class="text-gray-500 menu hidden md:mt-10 md:w-full rounded bg-white shadow-md absolute z-20 right-0 w-40 mt-5 py-2 animated faster">
-
-                    <!-- item -->
-                    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out"
-                        href="#">
-                        <i class="fad fa-user-edit text-xs mr-1"></i>
-                        edit my profile
-                    </a>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out"
-                        href="#">
-                        <i class="fad fa-inbox-in text-xs mr-1"></i>
-                        my inbox
-                    </a>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out"
-                        href="#">
-                        <i class="fad fa-badge-check text-xs mr-1"></i>
-                        tasks
-                    </a>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out"
-                        href="#">
-                        <i class="fad fa-comment-alt-dots text-xs mr-1"></i>
-                        chats
-                    </a>
-                    <!-- end item -->
-
-                    <hr>
-
-                    <!-- item -->
-                    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out"
-                        href="#">
-                        <i class="fad fa-user-times text-xs mr-1"></i>
-                        log out
-                    </a>
-                    <!-- end item -->
-
-                </div>
-            </div>
-            <!-- end user -->
-
-            <!-- notifcation -->
-            <div class="dropdown relative mr-5 md:static">
-
-                <button
-                    class="text-gray-500 menu-btn p-0 m-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none transition-all ease-in-out duration-300">
-                    <i class="fad fa-bells"></i>
-                </button>
-
-                <button class="hidden fixed top-0 left-0 z-10 w-full h-full menu-overflow"></button>
-
-                <div
-                    class="menu hidden rounded bg-white md:right-0 md:w-full shadow-md absolute z-20 right-0 w-84 mt-5 py-2 animated faster">
-                    <!-- top -->
-                    <div class="px-4 py-2 flex flex-row justify-between items-center capitalize font-semibold text-sm">
-                        <h1>notifications</h1>
-                        <div class="bg-teal-100 border border-teal-200 text-teal-500 text-xs rounded px-1">
-                            <strong>5</strong>
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- end top -->
-
-                    <!-- body -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="px-3 py-2 rounded mr-3 bg-gray-100 border border-gray-300">
-                            <i class="fad fa-birthday-cake text-sm"></i>
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">poll..</h1>
-                                <p class="text-xs text-gray-500">text here also</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>4 min ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <hr>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="px-3 py-2 rounded mr-3 bg-gray-100 border border-gray-300">
-                            <i class="fad fa-user-circle text-sm"></i>
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">mohamed..</h1>
-                                <p class="text-xs text-gray-500">text here also</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>78 min ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <hr>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="px-3 py-2 rounded mr-3 bg-gray-100 border border-gray-300">
-                            <i class="fad fa-images text-sm"></i>
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">new imag..</h1>
-                                <p class="text-xs text-gray-500">text here also</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>65 min ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <hr>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="px-3 py-2 rounded mr-3 bg-gray-100 border border-gray-300">
-                            <i class="fad fa-alarm-exclamation text-sm"></i>
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">time is up..</h1>
-                                <p class="text-xs text-gray-500">text here also</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>1 min ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <!-- end item -->
-
-
-                    <!-- end body -->
-
-                    <!-- bottom -->
-                    <hr>
-                    <div class="px-4 py-2 mt-2">
-                        <a href="#"
-                            class="border border-gray-300 block text-center text-xs uppercase rounded p-1 hover:text-teal-500 transition-all ease-in-out duration-500">
-                            view all
-                        </a>
-                    </div>
-                    <!-- end bottom -->
-                </div>
-            </div>
-            <!-- end notifcation -->
-
-            <!-- messages -->
-            <div class="dropdown relative mr-5 md:static">
-
-                <button
-                    class="text-gray-500 menu-btn p-0 m-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none transition-all ease-in-out duration-300">
-                    <i class="fad fa-comments"></i>
-                </button>
-
-                <button class="hidden fixed top-0 left-0 z-10 w-full h-full menu-overflow"></button>
-
-                <div
-                    class="menu hidden md:w-full md:right-0 rounded bg-white shadow-md absolute z-20 right-0 w-84 mt-5 py-2 animated faster">
-                    <!-- top -->
-                    <div class="px-4 py-2 flex flex-row justify-between items-center capitalize font-semibold text-sm">
-                        <h1>messages</h1>
-                        <div class="bg-teal-100 border border-teal-200 text-teal-500 text-xs rounded px-1">
-                            <strong>3</strong>
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- end top -->
-
-                    <!-- body -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="w-10 h-10 rounded-full overflow-hidden mr-3 bg-gray-100 border border-gray-300">
-                            <img class="w-full h-full object-cover" src="img/user1.jpg" alt="">
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">mohamed said</h1>
-                                <p class="text-xs text-gray-500">yeah i know</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>4 min ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <hr>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="w-10 h-10 rounded-full overflow-hidden mr-3 bg-gray-100 border border-gray-300">
-                            <img class="w-full h-full object-cover" src="img/user2.jpg" alt="">
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">sull goldmen</h1>
-                                <p class="text-xs text-gray-500">for sure</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>1 day ago</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <hr>
-                    <!-- end item -->
-
-                    <!-- item -->
-                    <a class="flex flex-row items-center justify-start px-4 py-4 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 transition-all duration-300 ease-in-out"
-                        href="#">
-
-                        <div class="w-10 h-10 rounded-full overflow-hidden mr-3 bg-gray-100 border border-gray-300">
-                            <img class="w-full h-full object-cover" src="img/user3.jpg" alt="">
-                        </div>
-
-                        <div class="flex-1 flex flex-rowbg-green-100">
-                            <div class="flex-1">
-                                <h1 class="text-sm font-semibold">mick</h1>
-                                <p class="text-xs text-gray-500">is typing ....</p>
-                            </div>
-                            <div class="text-right text-xs text-gray-500">
-                                <p>31 feb</p>
-                            </div>
-                        </div>
-
-                    </a>
-                    <!-- end item -->
-
-
-                    <!-- end body -->
-
-                    <!-- bottom -->
-                    <hr>
-                    <div class="px-4 py-2 mt-2">
-                        <a href="#"
-                            class="border border-gray-300 block text-center text-xs uppercase rounded p-1 hover:text-teal-500 transition-all ease-in-out duration-500">
-                            view all
-                        </a>
-                    </div>
-                    <!-- end bottom -->
-                </div>
-            </div>
-            <!-- end messages -->
-
-
-        </div>
-        <!-- end right -->
-    </div>
-    <!-- end navbar content -->
-
-</div>
+</nav>
 <!-- end navbar -->
 @stack('navbar_end')

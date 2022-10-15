@@ -1,7 +1,10 @@
 @stack('footer_start')
-    <footer class="footer">
-        <div class="flex flex-col sm:flex-row items-center justify-between mt-10 lg:mt-20 py-7 text-sm font-light">
-            <h2>footer</h2>
-        </div>
-    </footer>
+<!-- partial:partials/_footer.html -->
+<footer class="footer">
+    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+    </div>
+</footer>
+<!-- partial -->
 @stack('footer_end')

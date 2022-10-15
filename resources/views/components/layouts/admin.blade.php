@@ -12,36 +12,35 @@
 
 </x-layouts.admin.head>
 
-<body>
+<body class="">
 
-    @stack('body_stack')
-    <div class="main-content">
-        <div class="main-body">
+@stack('body_stack')
+<div class="main-content">
+    <div class="container-scroller">
+        <x-layouts.admin.menu/>
 
-            <x-layouts.admin.navbar />
+        <div class="container-fluid page-body-wrapper">
+            <x-layouts.admin.navbar/>
+            <div class="main-panel">
+                <x-layouts.admin.content>
 
-            <div class="h-screen flex flex-row flex-wrap">
-                <x-layouts.admin.menu />
+                    {!! $content !!}
 
-                <div class="bg-gray-100 flex-1 p-6 md:mt-16">
-                    <x-layouts.admin.content>
-
-                        {!! $content !!}
-
-                    </x-layouts.admin.content>
-                </div>
-
-              
+                </x-layouts.admin.content>
+                <x-layouts.admin.footer/>
             </div>
 
-            <x-layouts.admin.footer />
-
         </div>
+
     </div>
 
-    @stack('body_end')
+
+</div>
 
 
+@stack('body_end')
+
+<x-layouts.admin.script/>
 </body>
 
 </html>

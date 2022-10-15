@@ -3,8 +3,11 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import axios from 'axios';
+window.axios = axios;
 
-import './bootstrap';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// import './bootstrap';
 import { createApp } from 'vue';
 
 /**
