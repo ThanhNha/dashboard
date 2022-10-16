@@ -24,7 +24,7 @@
                      aria-labelledby="profile-dropdown">
                     <a href="#" class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon  rounded-circle">
                                 <i class="mdi mdi-settings text-primary"></i>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon  rounded-circle">
                                 <i class="mdi mdi-onepassword  text-info"></i>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-calendar-today text-success"></i>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
             <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link {{ (request()->is('dashboard')) ? 'active ' : ''  }}" href="index.html">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>

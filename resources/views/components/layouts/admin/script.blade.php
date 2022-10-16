@@ -1,6 +1,6 @@
 <!-- container-scroller -->
 <!-- plugins:js -->
-<script src={{ asset('assets/vendors/js/vendor.bundle.base.js') }} defer></script>
+{{--<script src={{ asset('assets/vendors/js/vendor.bundle.base.js') }} defer></script>--}}
 <!-- endinject -->
 <!-- Plugin js for this page -->
 <script src="{{ asset('assets/vendors/chart.js/chart.min.js') }} " defer></script>

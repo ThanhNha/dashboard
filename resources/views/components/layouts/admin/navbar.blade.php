@@ -27,7 +27,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-file-outline text-primary"></i>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon  rounded-circle">
                                 <i class="mdi mdi-web text-info"></i>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-layers text-danger"></i>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-calendar text-success"></i>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-settings text-danger"></i>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon  rounded-circle">
                                 <i class="mdi mdi-link-variant text-warning"></i>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-settings text-success"></i>
                             </div>
                         </div>
@@ -183,7 +183,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
+                            <div class="preview-icon rounded-circle">
                                 <i class="mdi mdi-logout text-danger"></i>
                             </div>
                         </div>
